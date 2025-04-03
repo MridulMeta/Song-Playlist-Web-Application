@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>iTunes Song Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <table class="playlist-table">
+                <thead>
+                    <tr>
+                        <!-- Playlist Table headers -->
+                        <th>Actions</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Artwork</th>
+                    </tr>
+                </thead>
+                <tbody id="playlist-table-body">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="input-area">
+            <br>
+            <h2>Enter Song Title:</h2>
+            <input type="text" id="song" />
+            <button id="submit_button">Submit</button>
+        </div>
+
+        <div class="search-results">
+            <h2 id="search-results-heading"></h2>
+            <table class="search-results-table">
+                <thead>
+                    <tr>
+                        <!-- Search Results Table headers -->
+                        <th>Action</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Artwork</th>
+                    </tr>
+                </thead>
+                <tbody id="search-results-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/eventListeners.js"></script>
+</body>
+</html>
